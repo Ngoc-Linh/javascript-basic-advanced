@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+      .was-validate .invalid-feedback {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1>form validator</h1>
+        <form class="row g-3 needs-validation" id="validationForm">
+            <div class="col-md-6 form-group">
+              <label for="validationName" class="form-label">Name</label>
+              <input type="text" name="validationName" class="form-control" id="validationName" rules="required|minLength:6" >
+              <div class="invalid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6 form-group">
+              <label for="validationEmail" class="form-label">Email</label>
+              <input type="email" name="validationEmail" class="form-control" id="validationEmail" rules="required|email">
+              <div class="invalid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6 form-group">
+              <label for="validationPassword" class="form-label">Password</label>
+              <input type="password" name="validationPassword" class="form-control" id="validationPassword" rules="required|minLength:6">
+              <div class="invalid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6 form-group">
+              <label for="validationConfirmPassword" class="form-label">Confirm Password</label>
+              <input type="password" name="validationConfirmPassword" class="form-control" id="validationConfirmPassword" rules="required">
+              <div class="invalid-feedback">
+                Looks good!
+              </div>
+            </div>
+            
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="./validator2.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
